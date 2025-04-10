@@ -8,66 +8,114 @@
     <meta name="description" content="Tutorial de receitas grátis" />
     <meta name="author" content="Sara George" />
     <meta name="keywords" content="HTML, Coding, Receita, Frango, FRANGO ASSADO COM BATATAS" />
+    <link rel="stylesheet" href="style.css">
     <title>Receita-de-frango</title>
 </head>
 
 <body>
-    <header>
-        <h1>FRANGO ASSADO COM BATATAS</h1>
+    <header class="header">
+        <div class="container">
+            <figure>
+                <img src="Imagens/Receita de frango.avif" type="img/avif" title="um prato de frango"
+                    alt="Um prato delecioso de frango assado com batatas">
+                <figcaption>Uma imagem de receita de frango assado com batatas.</figcaption>
+            </figure>
+            <div class="flex">
+                <h1>FRANGO ASSADO COM BATATAS</h1>
+                <p>author: sara</p>
+            </div>
+        </div>
         <hr>
-        <figure>
-            <img src="Imagens\Receita de frango.avif" type="img/avif" title="um prato de frango" width="560" height=""
-                alt="Um prato delecioso de frango assado com batatas">
-            <figcaption>Uma imagem de receita de frango assado com batatas.</figcaption>
-        </figure>
+
+
+
         <br>
-        <h2>Acesso rápido</h2>
-        <nav>
-            <ul>
-                <li><a href="#test1"><strong>Sobre o prato</strong></a></li>
-                <li><a href="#test2"><strong>Ingredientes</strong></a></li>
-                <li><a href="#test3"><strong>Modo de preparo</strong></a></li>
+        <nav class="nav">
+            <h2>Acesso rápido</h2>
+
+            <ul class="links">
+                <li class="s"><a href="#test1"><strong>Sobre o prato</strong></a></li>
+                <li class="sa"><a href="#test2"><strong>Ingredientes</strong></a></li>
+                <li class="sar"><a href="#test3"><strong>Modo de preparo</strong></a></li>
             </ul>
         </nav>
+        <hr class="space">
+        <section class="contato" class="contato">
+            <h2>Contato</h2>
+            <form>
+                <div class="contact">
+                <label for="name">Nome:</label>
+              <input required id="name" type="text" placeholder="Nome" />
+            </div>
+            <div class="contact">
+              <label for="email">E-mail:</label>
+              <input required id="email" type="email" placeholder="E-mail" />
+            </div>
+            <div class="contact">
+              <label for="assunto">Assunto:</label>
+              <input id="assunto" type="text" placeholder="Assunto" />
+            </div>
+            <div class="contact">
+              <label for="mensagem">Mensagem:</label>
+              <textarea id="mensagem" name="content" cols="25" rows="35" maxlength="50" minlength="3" placeholder="Mensagem"></textarea>
+              <button id="buttom" type="submit">Enviar</button>
+            </div>
+            </form>
+          </section>
+        </div>
     </header>
-    <main>
+
+
+    <main class="content">
         <section>
-            <h3 id="test1">Sobre o prato:</h3>
-            <p>O frango assado com batatas é uma receita simples e deliciosa que promete encantar o paladar. Combinando
-                tenros
-                pedaços
-                de frango marinados em uma mistura de temperos saborosos, molho de tomate e maionese, esta preparação
-                oferece
-                uma
-                explosão de sabores em cada mordida. As batatas, absorvendo os sucos aromáticos do frango, se
-                transformam em uma
-                guarnição macia e saborosa, complementando perfeitamente a suculência da carne. A simplicidade deste
-                prato não
-                compromete seu sabor. Com apenas alguns passos fáceis, como temperar o frango, misturar os ingredientes
-                e levar
-                ao
-                forno, você terá uma refeição reconfortante em pouco tempo. O resultado é uma bandeja dourada de frango
-                assado,
-                exalando
-                aromas irresistíveis que preenchem a cozinha. Servido com arroz branco fresquinho, este prato é um
-                convite para
-                uma
-                refeição aconchegante e memorável. Prepare-se para desfrutar de uma combinação clássica que certamente
-                conquistará
-                corações e paladares, tornando-se um prato favorito em sua ceia de Natal, reuniões familiares e momentos
-                especiais.
-            </p>
+            <div class="sobre">
+                <h3 id="test1">Sobre o prato:</h3>
+                <p>O frango assado com batatas é uma receita simples e deliciosa que promete encantar o paladar.
+                    Combinando
+                    tenros
+                    pedaços
+                    de frango marinados em uma mistura de temperos saborosos, molho de tomate e maionese, esta
+                    preparação
+                    oferece
+                    uma
+                    explosão de sabores em cada mordida. As batatas, absorvendo os sucos aromáticos do frango, se
+                    transformam em uma
+                    guarnição macia e saborosa, complementando perfeitamente a suculência da carne. A simplicidade deste
+                    prato não
+                    compromete seu sabor. Com apenas alguns passos fáceis, como temperar o frango, misturar os
+                    ingredientes
+                    e levar
+                    ao
+                    forno, você terá uma refeição reconfortante em pouco tempo. O resultado é uma bandeja dourada de
+                    frango
+                    assado,
+                    exalando
+                    aromas irresistíveis que preenchem a cozinha. Servido com arroz branco fresquinho, este prato é um
+                    convite para
+                    uma
+                    refeição aconchegante e memorável. Prepare-se para desfrutar de uma combinação clássica que
+                    certamente
+                    conquistará
+                    corações e paladares, tornando-se um prato favorito em sua ceia de Natal, reuniões familiares e
+                    momentos
+                    especiais.
+                </p>
+            </div>
+
         </section>
-        <section>
-            <video controls width="420" height="520" preload="auto" poster="Imagens/frango-assado-com-batata.jpg">
-                <source src="Vídeo\O frango assado.mp4" type="video/mp4">
-                <p>Seu navegador não possui suporte para vídeos HTML5</p>
-            </video>
-        </section>
-        <section>
-            <article>
+        <section class="video">
+            <div class="junta">
+                <video controls width="420" height="520" preload="auto" poster="Imagens/video-frango.webp">
+                    <source src="Vídeo/O frango assado.mp4" type="video/mp4">
+                    <p>Seu navegador não possui suporte para vídeos HTML5</p>
+                </video>
+
+            </div>
+
+            <div class="junta">
+
                 <h4 id="test2">Ingredientes:</h4>
-                <ol>
+                <ol class="junta">
                     <li>1 kg e 1/2 de frango, cortado em pedaços.</li>
                     <li>2 Batatas grandes picadas em cubos médios</li>
                     <li>Molho de tomate</li>
@@ -76,8 +124,12 @@
                     <li>Alho</li>
                     <li>Sal</li>
                 </ol>
-            </article>
-            <article>
+            </div>
+            </div>
+        </section>
+
+        <section class="modo">
+            <div class="passo">
                 <h5 id="test3">Modo de preparo:</h5>
                 <ul>
                     <li>PASSO 1: Tempere os pedaços de frango com alho, sal, sazon para aves.</li>
@@ -91,10 +143,10 @@
                     <li>PASSO 7: Sirva com arroz branco.</li>
                     <li>PASSO 8: Fica uma delícia.</li>
                 </ul>
-            </article>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <p>&copy; 2025 Receita-de-frango. Todos os direitos reservados.</p>
     </footer>
 </body>
