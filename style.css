@@ -1,0 +1,208 @@
+* {
+    /* deletar o espaço inteira */
+    padding: 0;
+    /* deletar o espaço externo */
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: sans-serif;
+    background-color: burlywood;
+    color: brown;
+    display: flex;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20 auto;
+    padding: 20px;
+
+}
+
+
+.header {
+    background-color: darkgoldenrod;
+    padding: 20px;
+    color: antiquewhite;
+    border: 2px solid transparent;
+    transition: .5s;
+
+}
+
+.flex {
+    border: 2px solid transparent;
+    transition: .5s;
+}
+
+.flex:hover {
+    border: 2px solid chartreuse;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.header:hover,
+.nav:hover {
+    border: 2px solid darkorange;
+    border-radius: 15px;
+}
+
+
+
+.header h1 {
+    padding-top: 20px;
+    color: darkorange;
+}
+
+.nav h2 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 22px;
+
+}
+
+.nav {
+    text-align: center;
+}
+
+.header p {
+    margin: 5px;
+    text-align: right;
+    text-transform: capitalize;
+}
+
+
+figure img {
+    margin: 5px;
+    padding: 5x;
+    width: 80%;
+    height: 30%;
+    border-radius: 10px;
+}
+
+.space {
+    margin-top: 20px;
+}
+
+.links .s,
+.sa,
+.sar {
+    list-style: none;
+    padding-bottom: 20px;
+    margin: 5px;
+
+}
+
+
+.links a {
+    text-decoration: none;
+    margin: 20px;
+    cursor: pointer;
+
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 10px;
+    border: 2px solid chocolate;
+    border-radius: 10px;
+
+}
+
+.contact {
+    border: 2px solid darksalmon;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 13px;
+}
+#name, #email, #assunto, #mensagem, #buttom{border-radius: 6px;
+border-color: white;
+margin-top: 7px;}
+
+
+
+
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 15px;
+    margin: 15px;
+    border: 2px solid transparent;
+
+
+}
+
+.sobre:hover,
+.video:hover,
+.modo:hover {
+    border: 2px solid chocolate;
+    border-radius: 10px;
+    color: crimson;
+}
+
+
+#test1,
+#test2,
+#test3 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+    padding: 30px;
+    border: 2px solid transparent
+}
+
+.junta {
+    text-align: center;
+    
+}
+
+
+.modo {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 30px;
+    border: 2px solid transparent;
+
+}
+
+
+.passo h5 {
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px 10px;
+    border: 2px solid transparent;
+}
+
+.footer p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer:hover {
+    border: 2px solid darkorange;
+    border-radius: 10px;
+    cursor: pointer;
+    color: hsl(0, 83%, 47%);
+}
+
