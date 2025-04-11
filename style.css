@@ -205,4 +205,45 @@ margin-top: 7px;}
     cursor: pointer;
     color: hsl(0, 83%, 47%);
 }
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .header, .nav, .sobre, .video, .modo, .contato, .footer {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .video {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contato, .contact {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .links a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #name, #email, #assunto, #mensagem, #buttom {
+        width: 100%;
+    }
+}
 
